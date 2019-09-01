@@ -4,6 +4,7 @@ package ua.jackson.sweater.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,17 +15,15 @@ import ua.jackson.sweater.repository.MessageRepository;
 import java.util.List;
 import java.util.Map;
 
-import static com.sun.org.apache.xml.internal.serializer.utils.Utils.messages;
-
 @Controller
 public class MainController {
 
 
     @Autowired
-    MessageRepository messageRepo;
+    private MessageRepository messageRepo;
 
     @GetMapping("/")
-    public String greeting(Map<String,Object> model){
+    public String greeting(Model model){
 
         return "greeting";
     }

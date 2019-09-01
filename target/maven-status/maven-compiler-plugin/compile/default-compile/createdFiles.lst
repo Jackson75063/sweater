@@ -1,0 +1,11 @@
+ua\jackson\sweater\controller\MainController.class
+ua\jackson\sweater\domain\Role.class
+ua\jackson\sweater\controller\RegistrationController.class
+ua\jackson\sweater\repository\MessageRepository.class
+ua\jackson\sweater\config\MvcConfig.class
+ua\jackson\sweater\domain\Message.class
+ua\jackson\sweater\repository\UserRepo.class
+ua\jackson\sweater\config\WebSecurityConfig.class
+ua\jackson\sweater\Main.class
+ua\jackson\sweater\service\UserService.class
+ua\jackson\sweater\domain\User.class
