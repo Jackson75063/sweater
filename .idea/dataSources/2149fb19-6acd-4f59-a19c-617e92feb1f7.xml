@@ -12,8 +12,8 @@
     </database>
     <schema id="4" parent="3" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2019-09-08.16:30:22.260</IntrospectionTimestamp>
-      <IntrospectionStateNumber>587</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-09-14.13:08:08.448</IntrospectionTimestamp>
+      <IntrospectionStateNumber>955</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -42,129 +42,398 @@
     </table>
     <table id="12" parent="4" name="message">
       <ObjectId>16523</ObjectId>
-      <StateNumber>587</StateNumber>
+      <StateNumber>955</StateNumber>
     </table>
-    <table id="13" parent="4" name="user_role">
+    <table id="13" parent="4" name="message_likes">
+      <ObjectId>24600</ObjectId>
+      <StateNumber>955</StateNumber>
+    </table>
+    <table id="14" parent="4" name="spring_session">
+      <ObjectId>16589</ObjectId>
+      <StateNumber>614</StateNumber>
+    </table>
+    <table id="15" parent="4" name="spring_session_attributes">
+      <ObjectId>16597</ObjectId>
+      <StateNumber>614</StateNumber>
+    </table>
+    <table id="16" parent="4" name="user_role">
       <ObjectId>16531</ObjectId>
       <StateNumber>587</StateNumber>
     </table>
-    <table id="14" parent="4" name="usr">
-      <ObjectId>16534</ObjectId>
-      <StateNumber>587</StateNumber>
+    <table id="17" parent="4" name="user_subscriptions">
+      <ObjectId>24585</ObjectId>
+      <StateNumber>780</StateNumber>
     </table>
-    <column id="15" parent="11" name="installed_rank">
+    <table id="18" parent="4" name="usr">
+      <ObjectId>16534</ObjectId>
+      <StateNumber>955</StateNumber>
+    </table>
+    <routine id="19" parent="4" name="armor">
+      <ObjectId>16585</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="20" parent="4" name="armor">
+      <ObjectId>16586</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="21" parent="4" name="crypt">
+      <ObjectId>16557</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="22" parent="4" name="dearmor">
+      <ObjectId>16587</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="23" parent="4" name="decrypt">
+      <ObjectId>16561</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="24" parent="4" name="decrypt_iv">
+      <ObjectId>16563</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="25" parent="4" name="digest">
+      <ObjectId>16554</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="26" parent="4" name="digest">
+      <ObjectId>16553</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="27" parent="4" name="encrypt">
+      <ObjectId>16560</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="28" parent="4" name="encrypt_iv">
+      <ObjectId>16562</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="29" parent="4" name="gen_random_bytes">
+      <ObjectId>16564</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="30" parent="4" name="gen_random_uuid">
+      <ObjectId>16565</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="31" parent="4" name="gen_salt">
+      <ObjectId>16558</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="32" parent="4" name="gen_salt">
+      <ObjectId>16559</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="33" parent="4" name="hmac">
+      <ObjectId>16556</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="34" parent="4" name="hmac">
+      <ObjectId>16555</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="35" parent="4" name="pgp_armor_headers">
+      <ObjectId>16588</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <ReturnsSet>1</ReturnsSet>
+    </routine>
+    <routine id="36" parent="4" name="pgp_key_id">
+      <ObjectId>16584</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="37" parent="4" name="pgp_pub_decrypt">
+      <ObjectId>16578</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="38" parent="4" name="pgp_pub_decrypt">
+      <ObjectId>16580</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="39" parent="4" name="pgp_pub_decrypt">
+      <ObjectId>16582</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="40" parent="4" name="pgp_pub_decrypt_bytea">
+      <ObjectId>16579</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="41" parent="4" name="pgp_pub_decrypt_bytea">
+      <ObjectId>16581</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="42" parent="4" name="pgp_pub_decrypt_bytea">
+      <ObjectId>16583</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="43" parent="4" name="pgp_pub_encrypt">
+      <ObjectId>16574</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="44" parent="4" name="pgp_pub_encrypt">
+      <ObjectId>16576</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="45" parent="4" name="pgp_pub_encrypt_bytea">
+      <ObjectId>16575</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="46" parent="4" name="pgp_pub_encrypt_bytea">
+      <ObjectId>16577</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="47" parent="4" name="pgp_sym_decrypt">
+      <ObjectId>16570</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="48" parent="4" name="pgp_sym_decrypt">
+      <ObjectId>16572</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="49" parent="4" name="pgp_sym_decrypt_bytea">
+      <ObjectId>16571</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="50" parent="4" name="pgp_sym_decrypt_bytea">
+      <ObjectId>16573</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>immutable</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="51" parent="4" name="pgp_sym_encrypt">
+      <ObjectId>16566</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="52" parent="4" name="pgp_sym_encrypt">
+      <ObjectId>16568</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="53" parent="4" name="pgp_sym_encrypt_bytea">
+      <ObjectId>16567</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <routine id="54" parent="4" name="pgp_sym_encrypt_bytea">
+      <ObjectId>16569</ObjectId>
+      <StateNumber>600</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <LanguageName>c</LanguageName>
+      <RoutineKind>function</RoutineKind>
+    </routine>
+    <column id="55" parent="11" name="installed_rank">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="16" parent="11" name="version">
+    <column id="56" parent="11" name="version">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="17" parent="11" name="description">
+    <column id="57" parent="11" name="description">
       <Position>3</Position>
       <DataType>varchar(200)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="18" parent="11" name="type">
+    <column id="58" parent="11" name="type">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="19" parent="11" name="script">
+    <column id="59" parent="11" name="script">
       <Position>5</Position>
       <DataType>varchar(1000)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="20" parent="11" name="checksum">
+    <column id="60" parent="11" name="checksum">
       <Position>6</Position>
       <DataType>integer|0</DataType>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="21" parent="11" name="installed_by">
+    <column id="61" parent="11" name="installed_by">
       <Position>7</Position>
       <DataType>varchar(100)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="22" parent="11" name="installed_on">
+    <column id="62" parent="11" name="installed_on">
       <Position>8</Position>
       <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
       <DefaultExpression>now()</DefaultExpression>
     </column>
-    <column id="23" parent="11" name="execution_time">
+    <column id="63" parent="11" name="execution_time">
       <Position>9</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
     </column>
-    <column id="24" parent="11" name="success">
+    <column id="64" parent="11" name="success">
       <Position>10</Position>
       <DataType>boolean|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>584</StateNumber>
     </column>
-    <index id="25" parent="11" name="flyway_schema_history_pk">
+    <index id="65" parent="11" name="flyway_schema_history_pk">
       <ObjectId>16518</ObjectId>
       <ColNames>installed_rank</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="26" parent="11" name="flyway_schema_history_s_idx">
+    <index id="66" parent="11" name="flyway_schema_history_s_idx">
       <ObjectId>16520</ObjectId>
       <ColNames>success</ColNames>
     </index>
-    <key id="27" parent="11" name="flyway_schema_history_pk">
+    <key id="67" parent="11" name="flyway_schema_history_pk">
       <ObjectId>16519</ObjectId>
       <ColNames>installed_rank</ColNames>
       <UnderlyingIndexName>flyway_schema_history_pk</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="28" parent="12" name="id">
+    <column id="68" parent="12" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="29" parent="12" name="filename">
+    <column id="69" parent="12" name="filename">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="30" parent="12" name="tag">
+    <column id="70" parent="12" name="tag">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="31" parent="12" name="text">
+    <column id="71" parent="12" name="text">
       <Position>4</Position>
       <DataType>varchar(2048)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="32" parent="12" name="user_id">
+    <column id="72" parent="12" name="user_id">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <StateNumber>587</StateNumber>
     </column>
-    <index id="33" parent="12" name="message_pkey">
+    <index id="73" parent="12" name="message_pkey">
       <ObjectId>16529</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="34" parent="12" name="message_pkey">
+    <key id="74" parent="12" name="message_pkey">
       <ObjectId>16530</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>message_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="35" parent="12" name="message_user_fk">
+    <foreign-key id="75" parent="12" name="message_user_fk">
       <ObjectId>16542</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>16534</RefTableId>
@@ -173,18 +442,171 @@
       <RefKeyName>usr_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="36" parent="13" name="user_id">
+    <column id="76" parent="13" name="user_id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>955</StateNumber>
+    </column>
+    <column id="77" parent="13" name="message_id">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>955</StateNumber>
+    </column>
+    <index id="78" parent="13" name="message_likes_pkey">
+      <ObjectId>24603</ObjectId>
+      <ColNames>user_id
+message_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="79" parent="13" name="message_likes_pkey">
+      <ObjectId>24604</ObjectId>
+      <ColNames>user_id
+message_id</ColNames>
+      <UnderlyingIndexName>message_likes_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="80" parent="13" name="message_likes_user_id_fkey">
+      <ObjectId>24605</ObjectId>
+      <ColNames>user_id</ColNames>
+      <RefTableId>16534</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>usr</RefTableName>
+      <RefKeyName>usr_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="81" parent="13" name="message_likes_message_id_fkey">
+      <ObjectId>24610</ObjectId>
+      <ColNames>message_id</ColNames>
+      <RefTableId>16523</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>message</RefTableName>
+      <RefKeyName>message_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="82" parent="14" name="primary_id">
+      <Position>1</Position>
+      <DataType>char(36)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>610</StateNumber>
+    </column>
+    <column id="83" parent="14" name="session_id">
+      <Position>2</Position>
+      <DataType>char(36)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>610</StateNumber>
+    </column>
+    <column id="84" parent="14" name="creation_time">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>610</StateNumber>
+    </column>
+    <column id="85" parent="14" name="last_access_time">
+      <Position>4</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>610</StateNumber>
+    </column>
+    <column id="86" parent="14" name="max_inactive_interval">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>610</StateNumber>
+    </column>
+    <column id="87" parent="14" name="expiry_time">
+      <Position>6</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>610</StateNumber>
+    </column>
+    <column id="88" parent="14" name="principal_name">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+      <StateNumber>610</StateNumber>
+    </column>
+    <index id="89" parent="14" name="spring_session_pk">
+      <ObjectId>16592</ObjectId>
+      <ColNames>primary_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="90" parent="14" name="spring_session_ix1">
+      <ObjectId>16594</ObjectId>
+      <ColNames>session_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="91" parent="14" name="spring_session_ix2">
+      <ObjectId>16595</ObjectId>
+      <ColNames>expiry_time</ColNames>
+    </index>
+    <index id="92" parent="14" name="spring_session_ix3">
+      <ObjectId>16596</ObjectId>
+      <ColNames>principal_name</ColNames>
+    </index>
+    <key id="93" parent="14" name="spring_session_pk">
+      <ObjectId>16593</ObjectId>
+      <ColNames>primary_id</ColNames>
+      <UnderlyingIndexName>spring_session_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="94" parent="15" name="session_primary_id">
+      <Position>1</Position>
+      <DataType>char(36)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>614</StateNumber>
+    </column>
+    <column id="95" parent="15" name="attribute_name">
+      <Position>2</Position>
+      <DataType>varchar(200)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>614</StateNumber>
+    </column>
+    <column id="96" parent="15" name="attribute_bytes">
+      <Position>3</Position>
+      <DataType>bytea|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>614</StateNumber>
+    </column>
+    <index id="97" parent="15" name="spring_session_attributes_pk">
+      <ObjectId>16603</ObjectId>
+      <ColNames>session_primary_id
+attribute_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="98" parent="15" name="spring_session_attributes_ix1">
+      <ObjectId>16610</ObjectId>
+      <ColNames>session_primary_id</ColNames>
+    </index>
+    <key id="99" parent="15" name="spring_session_attributes_pk">
+      <ObjectId>16604</ObjectId>
+      <ColNames>session_primary_id
+attribute_name</ColNames>
+      <UnderlyingIndexName>spring_session_attributes_pk</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="100" parent="15" name="spring_session_attributes_fk">
+      <ObjectId>16605</ObjectId>
+      <ColNames>session_primary_id</ColNames>
+      <RefTableId>16589</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>spring_session</RefTableName>
+      <RefKeyName>spring_session_pk</RefKeyName>
+      <RefColNames>primary_id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="101" parent="16" name="user_id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="37" parent="13" name="roles">
+    <column id="102" parent="16" name="roles">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>587</StateNumber>
     </column>
-    <foreign-key id="38" parent="13" name="user_role_user_fk">
+    <foreign-key id="103" parent="16" name="user_role_user_fk">
       <ObjectId>16547</ObjectId>
       <ColNames>user_id</ColNames>
       <RefTableId>16534</RefTableId>
@@ -193,50 +615,587 @@
       <RefKeyName>usr_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="39" parent="14" name="id">
+    <column id="104" parent="17" name="channel_id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>780</StateNumber>
+    </column>
+    <column id="105" parent="17" name="subscriber_id">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>780</StateNumber>
+    </column>
+    <index id="106" parent="17" name="user_subscriptions_pkey">
+      <ObjectId>24588</ObjectId>
+      <ColNames>channel_id
+subscriber_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="107" parent="17" name="user_subscriptions_pkey">
+      <ObjectId>24589</ObjectId>
+      <ColNames>channel_id
+subscriber_id</ColNames>
+      <UnderlyingIndexName>user_subscriptions_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="108" parent="17" name="user_subscriptions_channel_id_fkey">
+      <ObjectId>24590</ObjectId>
+      <ColNames>channel_id</ColNames>
+      <RefTableId>16534</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>usr</RefTableName>
+      <RefKeyName>usr_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="109" parent="17" name="user_subscriptions_subscriber_id_fkey">
+      <ObjectId>24595</ObjectId>
+      <ColNames>subscriber_id</ColNames>
+      <RefTableId>16534</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>usr</RefTableName>
+      <RefKeyName>usr_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="110" parent="18" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="40" parent="14" name="activation_code">
+    <column id="111" parent="18" name="activation_code">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="41" parent="14" name="active">
+    <column id="112" parent="18" name="active">
       <Position>3</Position>
       <DataType>boolean|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="42" parent="14" name="email">
+    <column id="113" parent="18" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0</DataType>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="43" parent="14" name="password">
+    <column id="114" parent="18" name="password">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>587</StateNumber>
     </column>
-    <column id="44" parent="14" name="username">
+    <column id="115" parent="18" name="username">
       <Position>6</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>587</StateNumber>
     </column>
-    <index id="45" parent="14" name="usr_pkey">
+    <index id="116" parent="18" name="usr_pkey">
       <ObjectId>16540</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="46" parent="14" name="usr_pkey">
+    <key id="117" parent="18" name="usr_pkey">
       <ObjectId>16541</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>usr_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <argument id="118" parent="19">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="119" parent="19">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="120" parent="20">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="121" parent="20">
+      <Position>2</Position>
+      <DataType>text[]|0</DataType>
+    </argument>
+    <argument id="122" parent="20">
+      <Position>3</Position>
+      <DataType>text[]|0</DataType>
+    </argument>
+    <argument id="123" parent="20">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="124" parent="21">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="125" parent="21">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="126" parent="21">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="127" parent="22">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="128" parent="22">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="129" parent="23">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="130" parent="23">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="131" parent="23">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="132" parent="23">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="133" parent="24">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="134" parent="24">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="135" parent="24">
+      <Position>3</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="136" parent="24">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="137" parent="24">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="138" parent="25">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="139" parent="25">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="140" parent="25">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="141" parent="26">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="142" parent="26">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="143" parent="26">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="144" parent="27">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="145" parent="27">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="146" parent="27">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="147" parent="27">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="148" parent="28">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="149" parent="28">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="150" parent="28">
+      <Position>3</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="151" parent="28">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="152" parent="28">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="153" parent="29">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+    </argument>
+    <argument id="154" parent="29">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="155" parent="30">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>uuid|0</DataType>
+    </argument>
+    <argument id="156" parent="31">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="157" parent="31">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="158" parent="32">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="159" parent="32">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+    </argument>
+    <argument id="160" parent="32">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="161" parent="33">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="162" parent="33">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="163" parent="33">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="164" parent="33">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="165" parent="34">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="166" parent="34">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="167" parent="34">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="168" parent="34">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="169" parent="35">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="170" parent="35" name="key">
+      <Position>2</Position>
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="171" parent="35" name="value">
+      <Position>3</Position>
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="172" parent="35">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>setof record|0</DataType>
+    </argument>
+    <argument id="173" parent="36">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="174" parent="36">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="175" parent="37">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="176" parent="37">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="177" parent="37">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="178" parent="38">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="179" parent="38">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="180" parent="38">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="181" parent="38">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="182" parent="39">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="183" parent="39">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="184" parent="39">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="185" parent="39">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="186" parent="39">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="187" parent="40">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="188" parent="40">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="189" parent="40">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="190" parent="41">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="191" parent="41">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="192" parent="41">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="193" parent="41">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="194" parent="42">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="195" parent="42">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="196" parent="42">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="197" parent="42">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="198" parent="42">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="199" parent="43">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="200" parent="43">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="201" parent="43">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="202" parent="44">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="203" parent="44">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="204" parent="44">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="205" parent="44">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="206" parent="45">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="207" parent="45">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="208" parent="45">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="209" parent="46">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="210" parent="46">
+      <Position>2</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="211" parent="46">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="212" parent="46">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="213" parent="47">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="214" parent="47">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="215" parent="47">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="216" parent="48">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="217" parent="48">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="218" parent="48">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="219" parent="48">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="220" parent="49">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="221" parent="49">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="222" parent="49">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="223" parent="50">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="224" parent="50">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="225" parent="50">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="226" parent="50">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="227" parent="51">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="228" parent="51">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="229" parent="51">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="230" parent="52">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="231" parent="52">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="232" parent="52">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="233" parent="52">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="234" parent="53">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="235" parent="53">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="236" parent="53">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="237" parent="54">
+      <Position>1</Position>
+      <DataType>bytea|0</DataType>
+    </argument>
+    <argument id="238" parent="54">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="239" parent="54">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+    </argument>
+    <argument id="240" parent="54">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>bytea|0</DataType>
+    </argument>
   </database-model>
 </dataSource>
